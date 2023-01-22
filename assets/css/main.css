@@ -50,13 +50,12 @@ a {
 }
 
 .link-style {
-  background-color: rgba(3, 201, 215, 0.1);
+  background-color: rgba(3, 201, 215, 0.8);
   border-left: 5px solid #fff;
-
+  width: 100%;
 }
 
 .span-link {
-   
     font-weight: medium;
     font-size: 1.2em;
     font-family: "Rajdhani", sans-serif;
@@ -65,17 +64,5 @@ a {
 .option {
   color: #fff;
   opacity: 1;
-  font-weight: semibold;
+  font-weight: bolder;
 }
-
-.active-link {
-    border-radius: 5px;
-    margin-bottom: 1em;
-    text-decoration: none;
-    padding-left: 1.5em;
-    width: 100%;
-}
-
-/* .active-link:hover {
-    background-color: #F7F7F7;
-} */

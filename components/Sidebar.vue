@@ -17,11 +17,15 @@
         </div>
         <div class="bg-blue-gray h-screen">
             <div v-for="link in sidebarData" :key="link.title">
-            <div class="w-full bg-dark-grey">
-                <div v-for="item in link.links" :key="item.id" class="py-4 w-full">
-                    <NuxtLink class="active-link py-3" to="/" @click="selectedOption = item.name" :class="selectedOption === item.name ? 'link-style':''">
-                        <span class="span-link" :class="selectedOption === item.name ? 'option' :'text-gray-300'"><Icon name="Dashboard"></Icon></span>
-                        <span class="span-link mx-2" :class="selectedOption === item.name ? 'option' :'text-gray-300'">{{ item.name }}</span>
+            <div class="w-full">
+                <div v-for="item in link.links" :key="item.id" class="py-2 w-full">
+                    <NuxtLink  to="/" >
+                        <div class="flex justify-start w-full px-4 py-3" @click="selectedOption = item.name" :class="selectedOption === item.name ? 'link-style':''">
+                            <span class="span-link" :class="selectedOption === item.name ? 'option' :'text-gray-300'">
+                                <Icon name="Dashboard"></Icon>
+                            </span>
+                            <span class="span-link mx-2" :class="selectedOption === item.name ? 'option' :'text-gray-300'">{{ item.name }}</span>
+                        </div>
                     </NuxtLink>
                 </div>
             </div>
