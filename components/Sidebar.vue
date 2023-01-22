@@ -21,10 +21,10 @@
                 <div v-for="item in link.links" :key="item.id" class="py-2 w-full">
                     <NuxtLink  to="/" >
                         <div class="flex justify-start w-full px-4 py-3" @click="selectedOption = item.name" :class="selectedOption === item.name ? 'link-style':''">
-                            <span class="span-link" :class="selectedOption === item.name ? 'option' :'text-gray-300'">
-                                <Icon name="Dashboard"></Icon>
+                            <span class="span-link" :class="selectedOption === item.name ? 'option' :'text-gray-300'" >
+                                <Icon :name="`${item.name}`"></Icon>
                             </span>
-                            <span class="span-link mx-2" :class="selectedOption === item.name ? 'option' :'text-gray-300'">{{ item.name }}</span>
+                            <span class="span-link mx-3" :class="selectedOption === item.name ? 'option' :'text-gray-300'">{{ item.name }}</span>
                         </div>
                     </NuxtLink>
                 </div>
@@ -38,5 +38,6 @@
 import links from "~~/utils/sidebarData";
 const sidebarData = useState('sidebarData', () => links)
 const selectedOption = useState('selectedOption', () => "Dashboard")
+
 
 </script>
