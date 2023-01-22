@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Amiri:ital@1&family=Lobster+Two&family=Cormorant+Garamond:wght@300&family=Open+Sans:wght@400;500;600;700&family=Racing+Sans+One&family=Rajdhani:wght@500&family=Roboto+Mono:wght@100&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.videos::-webkit-scrollbar {
+  width: 0px;
+  scroll-snap-points-y: repeat(3rem);
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(237, 237, 237);
+  border-radius: 40px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+
+.image-box {
+  height: 130px;
+  width: 130px;
+}
+
+.text-family {
+ font-family: "Rajdhani", sans-serif;
+}
+
+.link-style {
+  background-color: rgba(3, 201, 215, 0.1);
+  border-left: 5px solid #fff;
+
+}
+
+.span-link {
+   
+    font-weight: medium;
+    font-size: 1.2em;
+    font-family: "Rajdhani", sans-serif;
+}
+
+.option {
+  color: #fff;
+  opacity: 1;
+  font-weight: semibold;
+}
+
+.active-link {
+    border-radius: 5px;
+    margin-bottom: 1em;
+    text-decoration: none;
+    padding-left: 1.5em;
+    width: 100%;
+}
+
+/* .active-link:hover {
+    background-color: #F7F7F7;
+} */
