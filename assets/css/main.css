@@ -77,7 +77,7 @@ a {
   position: absolute;
   width: 100vw;
   display: grid;
-  grid-template-columns: 10% 40% 30%;
+  grid-template-columns: 10% 1fr 1fr;
  
 }
 
