@@ -3,7 +3,7 @@ import { generateUniqueId } from "./generateUniqueId";
 export const userData = [
   {
     id: generateUniqueId(),
-    name: "Abiodun Olawale Solomom",
+    name: "Abiodun Olawale Solomon",
     address: "12b Emmanuel High Street Along Surface Road",
     bank: "Sterling Bank PLC",
     createdAt: "A Day Ago", //It can be represent as UTC time and date
@@ -27,7 +27,7 @@ export const userData = [
   },
   {
     id: generateUniqueId(),
-    name: "Abiodun Olawale Solomom",
+    name: "Abiodun Olawale Solomon",
     address: "12b Emmanuel High Street Along Surface Road",
     bank: "Sterling Bank PLC",
     createdAt: "A Day Ago",
@@ -51,7 +51,7 @@ export const userData = [
   },
   {
     id: generateUniqueId(),
-    name: "Abiodun Olawale Solomom",
+    name: "Abiodun Olawale Solomon",
     address: "12b Emmanuel High Street Along Surface Road",
     bank: "Sterling Bank PLC",
     createdAt: "A Day Ago",
@@ -75,7 +75,7 @@ export const userData = [
   },
   {
     id: generateUniqueId(),
-    name: "Abiodun Olawale Solomom",
+    name: "Abiodun Olawale Solomon",
     address: "12b Emmanuel High Street Along Surface Road",
     bank: "Sterling Bank PLC",
     createdAt: "A Day Ago",
@@ -99,7 +99,7 @@ export const userData = [
   },
   {
     id: generateUniqueId(),
-    name: "Abiodun Olawale Solomom",
+    name: "Abiodun Olawale Solomon",
     address: "12b Emmanuel High Street Along Surface Road",
     bank: "Sterling Bank PLC",
     createdAt: "A Day Ago",
@@ -123,7 +123,7 @@ export const userData = [
   },
   {
     id: generateUniqueId(),
-    name: "Abiodun Olawale Solomom",
+    name: "Abiodun Olawale Solomon",
     address: "12b Emmanuel High Street Along Surface Road",
     bank: "Sterling Bank PLC",
     createdAt: "A Day Ago",
@@ -147,7 +147,7 @@ export const userData = [
   },
   {
     id: generateUniqueId(),
-    name: "Abiodun Olawale Solomom",
+    name: "Abiodun Olawale Solomon",
     address: "12b Emmanuel High Street Along Surface Road",
     bank: "Sterling Bank PLC",
     createdAt: "A Day Ago",
@@ -179,7 +179,7 @@ export const userData = [
   },
   {
     id: generateUniqueId(),
-    name: "Abiodun Olawale Solomom",
+    name: "Abiodun Olawale Solomon",
     address: "12b Emmanuel High Street Along Surface Road",
     bank: "Sterling Bank PLC",
     createdAt: "A Day Ago",

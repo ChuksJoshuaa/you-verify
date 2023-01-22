@@ -11,8 +11,22 @@
       </div>
     </div>
     <div class="h-full w-full">
-      <div v-for="item in users" :key="item.id">
-        <h2>{{item.name}}</h2>
+      <div v-for="item in users" :key="item.id" class="p-4 border-b-1 border-gray-100">
+        <div class="agent-container">
+          <div class="flex flex-col items-center">
+            <Icon name="fa6-solid:plus"></Icon>
+            <h2>Assign <br />Agent</h2>
+          </div>
+          <div class="flex flex-col items-center">
+            <p>{{item.name}}</p>
+            <p>{{item.address.slice(0, 23)}}...</p>
+            <div class="flex ">
+              <Users />
+              <h2>{{ item.bank}}</h2>
+            </div>
+          </div>
+          <div></div>
+        </div>
       </div>
     </div>
   </div>
