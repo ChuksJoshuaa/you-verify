@@ -2,8 +2,8 @@
 
 <template>
     <div>
-        <div class="border-b-2 border-gray-200 h-[4.3rem] flex items-center bg-white">
-            <img src="https://res.cloudinary.com/chuksmbanaso/image/upload/v1674124276/media/logo_iffgzd.svg" alt="youverify logo" class="image-box m-auto mt-[-2em] ml-[1.6em] cursor-pointer" />    
+        <div class="border-b-2 border-gray-200 h-[5rem] flex items-center bg-white">
+            <img src="https://res.cloudinary.com/chuksmbanaso/image/upload/v1674124276/media/logo_iffgzd.svg" alt="youverify logo" class="image-box m-auto mt-[-1.5em] ml-[1.6em] cursor-pointer" />    
         </div>
         <div class="h-[6.4em] bg-dark-blue">
             <div class="py-3 px-6">

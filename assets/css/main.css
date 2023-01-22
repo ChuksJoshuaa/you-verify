@@ -9,7 +9,7 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-
+  overflow: hidden;
 }
 
 a {
@@ -78,16 +78,17 @@ a {
   width: 100vw;
   display: grid;
   grid-template-columns: 10% 40% 30%;
+ 
 }
 
 .select-body {
   min-width: 120px;
-  height: 3.2em;
+  height: 3.9em;
   font-family: "Rajdhani", sans-serif;
 }
 
 .input-box {
   /* min-width: 300px; */
   /* width: 600px; */
-  height: 3.2em;
+  height: 3.9em;
 }

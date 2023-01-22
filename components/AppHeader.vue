@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <div class="ml-[3em] h-[4.3rem] relative w-full bg-light-gray">
+  <div class="ml-[3em] h-[5rem] relative w-full bg-light-gray">
     <div class="py-2 select-top z-10">
       <select name="select" v-model="selectedValue" class="z-5 select-body outline-none border border-gray-100 text-md capitalize py-1 rounded cursor-pointer bg-gray-100 text-gray-900">
         <option value="" disabled selected>Select</option>
@@ -14,13 +14,20 @@ export default {
       <div class="relative">
         <input v-model="inputValue" type="text" tabindex="1" class=" w-full input-box bg-gray-100 border-l-1 border-gray-300 p-2 outline-none" placeholder="Search for anything here" />
         <button class="absolute right-[1em] top-[13px]">
-          <Icon @click="log" name="bi:search" class="cursor-pointer font-bolder text-gray-600 text-lg md:text-xl"></Icon>
+          <Icon @click="log" name="bi:search" class="cursor-pointer font-bold text-gray-600 text-lg md:text-2xl"></Icon>
         </button>
       </div>
-      <div class="flex ">
-         <Icon name="bi:bell"></Icon>
+      <div class="flex pl-3 justify-start items-center">
+        <div class="relative">
+          <Icon name="bi:bell-fill"
+            class="ml-[2em] font-bold cursor-pointer text-[#22A6B5] h-[62px] w-[62px] p-4 shadow-lg bg-main-bg rounded-lg"></Icon>
+            <h4 class="absolute top-0 right-0 text-xl text-center font-bold text-gray-50 rounded-full bg-red-600 h-[30px] w-[30px]">2</h4>
+         </div>
         <img src="https://res.cloudinary.com/chuksmbanaso/image/upload/v1647635322/media/pic2_c0wzar.jpg" alt="profile-icon"
-          class="h-[52px] w-[52px]" />
+          class="h-[62px] w-[62px] rounded-full mx-[3.4em]" />
+
+          <h3 class=" text-center font-bold text-gray-900 text-lg md:text-2xl">Solomon</h3>
+          <Icon name="fa6-solid:angle-down" class="ml-[2em] text-lg md:text-2xl font-bold"></Icon>
       </div>
     </div>
     
