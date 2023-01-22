@@ -2,7 +2,7 @@ import { generateUniqueId } from "./generateUniqueId";
 
 export const userData = [
   {
-    id: generateUniqueId,
+    id: generateUniqueId(),
     name: "Abiodun Olawale Solomom",
     address: "12b Emmanuel High Street Along Surface Road",
     bank: "Sterling Bank PLC",
@@ -10,7 +10,7 @@ export const userData = [
     status: "Unassigned",
   },
   {
-    id: generateUniqueId,
+    id: generateUniqueId(),
     name: "John Obinna",
     address: "1c Timothy road, off isolo way",
     bank: "Eco Bank PLC",
@@ -18,7 +18,7 @@ export const userData = [
     status: "Completed",
   },
   {
-    id: generateUniqueId,
+    id: generateUniqueId(),
     name: "Chukwudi Joshua",
     address: "34 off lekki phase one, tension road",
     bank: "First Bank PLC",
@@ -26,7 +26,7 @@ export const userData = [
     status: "Assigned",
   },
   {
-    id: generateUniqueId,
+    id: generateUniqueId(),
     name: "Abiodun Olawale Solomom",
     address: "12b Emmanuel High Street Along Surface Road",
     bank: "Sterling Bank PLC",
@@ -34,7 +34,7 @@ export const userData = [
     status: "Unassigned",
   },
   {
-    id: generateUniqueId,
+    id: generateUniqueId(),
     name: "John Obinna",
     address: "1c Timothy road, off isolo way",
     bank: "Eco Bank PLC",
@@ -42,7 +42,7 @@ export const userData = [
     status: "Completed",
   },
   {
-    id: generateUniqueId,
+    id: generateUniqueId(),
     name: "Chukwudi Joshua",
     address: "34 off lekki phase one, tension road",
     bank: "First Bank PLC",
@@ -50,7 +50,7 @@ export const userData = [
     status: "Assigned",
   },
   {
-    id: generateUniqueId,
+    id: generateUniqueId(),
     name: "Abiodun Olawale Solomom",
     address: "12b Emmanuel High Street Along Surface Road",
     bank: "Sterling Bank PLC",
@@ -58,7 +58,7 @@ export const userData = [
     status: "Unassigned",
   },
   {
-    id: generateUniqueId,
+    id: generateUniqueId(),
     name: "John Obinna",
     address: "1c Timothy road, off isolo way",
     bank: "Eco Bank PLC",
@@ -66,7 +66,7 @@ export const userData = [
     status: "Completed",
   },
   {
-    id: generateUniqueId,
+    id: generateUniqueId(),
     name: "Chukwudi Joshua",
     address: "34 off lekki phase one, tension road",
     bank: "First Bank PLC",
@@ -74,7 +74,7 @@ export const userData = [
     status: "Assigned",
   },
   {
-    id: generateUniqueId,
+    id: generateUniqueId(),
     name: "Abiodun Olawale Solomom",
     address: "12b Emmanuel High Street Along Surface Road",
     bank: "Sterling Bank PLC",
@@ -82,7 +82,7 @@ export const userData = [
     status: "Unassigned",
   },
   {
-    id: generateUniqueId,
+    id: generateUniqueId(),
     name: "John Obinna",
     address: "1c Timothy road, off isolo way",
     bank: "Eco Bank PLC",
@@ -90,7 +90,7 @@ export const userData = [
     status: "Completed",
   },
   {
-    id: generateUniqueId,
+    id: generateUniqueId(),
     name: "Chukwudi Joshua",
     address: "34 off lekki phase one, tension road",
     bank: "First Bank PLC",
@@ -98,7 +98,7 @@ export const userData = [
     status: "Assigned",
   },
   {
-    id: generateUniqueId,
+    id: generateUniqueId(),
     name: "Abiodun Olawale Solomom",
     address: "12b Emmanuel High Street Along Surface Road",
     bank: "Sterling Bank PLC",
@@ -106,7 +106,7 @@ export const userData = [
     status: "Unassigned",
   },
   {
-    id: generateUniqueId,
+    id: generateUniqueId(),
     name: "John Obinna",
     address: "1c Timothy road, off isolo way",
     bank: "Eco Bank PLC",
@@ -114,7 +114,7 @@ export const userData = [
     status: "Completed",
   },
   {
-    id: generateUniqueId,
+    id: generateUniqueId(),
     name: "Chukwudi Joshua",
     address: "34 off lekki phase one, tension road",
     bank: "First Bank PLC",
@@ -122,7 +122,7 @@ export const userData = [
     status: "Assigned",
   },
   {
-    id: generateUniqueId,
+    id: generateUniqueId(),
     name: "Abiodun Olawale Solomom",
     address: "12b Emmanuel High Street Along Surface Road",
     bank: "Sterling Bank PLC",
@@ -130,7 +130,7 @@ export const userData = [
     status: "Unassigned",
   },
   {
-    id: generateUniqueId,
+    id: generateUniqueId(),
     name: "John Obinna",
     address: "1c Timothy road, off isolo way",
     bank: "Eco Bank PLC",
@@ -138,7 +138,7 @@ export const userData = [
     status: "Completed",
   },
   {
-    id: generateUniqueId,
+    id: generateUniqueId(),
     name: "Chukwudi Joshua",
     address: "34 off lekki phase one, tension road",
     bank: "First Bank PLC",
@@ -146,7 +146,7 @@ export const userData = [
     status: "Assigned",
   },
   {
-    id: generateUniqueId,
+    id: generateUniqueId(),
     name: "Abiodun Olawale Solomom",
     address: "12b Emmanuel High Street Along Surface Road",
     bank: "Sterling Bank PLC",
@@ -154,7 +154,7 @@ export const userData = [
     status: "Unassigned",
   },
   {
-    id: generateUniqueId,
+    id: generateUniqueId(),
     name: "John Obinna",
     address: "1c Timothy road, off isolo way",
     bank: "Eco Bank PLC",
@@ -162,7 +162,7 @@ export const userData = [
     status: "Completed",
   },
   {
-    id: generateUniqueId,
+    id: generateUniqueId(),
     name: "Chukwudi Joshua",
     address: "34 off lekki phase one, tension road",
     bank: "First Bank PLC",
@@ -170,7 +170,7 @@ export const userData = [
     status: "Assigned",
   },
   {
-    id: generateUniqueId,
+    id: generateUniqueId(),
     name: "John Obinna",
     address: "1c Timothy road, off isolo way",
     bank: "Eco Bank PLC",
@@ -178,7 +178,7 @@ export const userData = [
     status: "Completed",
   },
   {
-    id: generateUniqueId,
+    id: generateUniqueId(),
     name: "Abiodun Olawale Solomom",
     address: "12b Emmanuel High Street Along Surface Road",
     bank: "Sterling Bank PLC",
@@ -186,7 +186,7 @@ export const userData = [
     status: "Unassigned",
   },
   {
-    id: generateUniqueId,
+    id: generateUniqueId(),
     name: "John Obinna",
     address: "1c Timothy road, off isolo way",
     bank: "Eco Bank PLC",

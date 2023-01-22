@@ -72,3 +72,13 @@ a {
   position: relative;
   right: 1em;
 }
+
+.select-top {
+  position: absolute;
+}
+
+.select-body {
+  min-width: 120px;
+  height: 3.2em;
+  font-family: "Rajdhani", sans-serif;
+}

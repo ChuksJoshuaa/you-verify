@@ -2,7 +2,7 @@ import { generateUniqueId } from "./generateUniqueId";
 
 export const agentData = [
   {
-    id: generateUniqueId,
+    id: generateUniqueId(),
     name: "Abiodun Olawale Solomom",
     phone: 08023567812,
     location: "Akure",
@@ -11,7 +11,7 @@ export const agentData = [
     status: "online",
   },
   {
-    id: generateUniqueId,
+    id: generateUniqueId(),
     name: "Bola Wale Simi",
     phone: 09023567812,
     location: "Sango",
@@ -20,7 +20,7 @@ export const agentData = [
     status: "offline",
   },
   {
-    id: generateUniqueId,
+    id: generateUniqueId(),
     name: "Caleb Timothy Levi",
     phone: 08123567812,
     location: "Ore",
@@ -29,7 +29,7 @@ export const agentData = [
     status: "online",
   },
   {
-    id: generateUniqueId,
+    id: generateUniqueId(),
     name: "John Jake Paul",
     phone: 09063567812,
     location: "Lagos",
@@ -38,7 +38,7 @@ export const agentData = [
     status: "offline",
   },
   {
-    id: generateUniqueId,
+    id: generateUniqueId(),
     name: "Nnenna Joshua Amaka",
     phone: 08143567812,
     location: "Enugu",
@@ -47,7 +47,7 @@ export const agentData = [
     status: "online",
   },
   {
-    id: generateUniqueId,
+    id: generateUniqueId(),
     name: "Jane Diva Bright",
     phone: 09023567812,
     location: "Abia",
@@ -56,7 +56,7 @@ export const agentData = [
     status: "offline",
   },
   {
-    id: generateUniqueId,
+    id: generateUniqueId(),
     name: "Olumide Dare Ola",
     phone: 08175567812,
     location: "Ibadan",
@@ -65,7 +65,7 @@ export const agentData = [
     status: "online",
   },
   {
-    id: generateUniqueId,
+    id: generateUniqueId(),
     name: "Nkiru Oge Chukwu",
     phone: 09068567812,
     location: "Imo",
@@ -74,7 +74,7 @@ export const agentData = [
     status: "offline",
   },
   {
-    id: generateUniqueId,
+    id: generateUniqueId(),
     name: "Anita Chisom Oshili",
     phone: 09045672367,
     location: "Lekki",
@@ -83,7 +83,7 @@ export const agentData = [
     status: "online",
   },
   {
-    id: generateUniqueId,
+    id: generateUniqueId(),
     name: "Alex David Kane",
     phone: 08001567819,
     location: "Ago",
