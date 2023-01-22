@@ -13,8 +13,8 @@
                     <div v-if="isSidebarOpen"  class="close-button mt-[-3.1em]">
                         <Icon @click="isSidebarOpen = false" name="fa6-solid:arrow-left" class="p-2 text-4xl rounded-full bg-main-bg shadow-lg cursor-pointer hover:bg-light-gray hover:text-[#fff]"></Icon>
                     </div>
-                    <div v-else  class="p-2 mt-[-3.1em]">
-                        <Icon @click="isSidebarOpen = true" name="fa6-solid:arrow-right" class="p-2 text-4xl rounded-full bg-main-bg shadow-lg cursor-pointer hover:bg-light-gray hover:text-[#fff]"></Icon>
+                    <div v-else  class="p-2 mt-[-3.4em] mr-[3em]">
+                        <Icon @click="isSidebarOpen = true" name="fa6-solid:arrow-right" class="p-2 text-3xl rounded-full bg-main-bg shadow-lg cursor-pointer hover:bg-light-gray hover:text-[#fff]"></Icon>
                     </div>
                 </div>
             </div>

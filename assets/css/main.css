@@ -82,3 +82,9 @@ a {
   height: 3.2em;
   font-family: "Rajdhani", sans-serif;
 }
+
+.input-box {
+  /* min-width: 300px; */
+  width: 600px;
+  height: 3.2em;
+}
