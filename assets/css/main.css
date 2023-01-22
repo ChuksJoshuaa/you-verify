@@ -75,6 +75,9 @@ a {
 
 .select-top {
   position: absolute;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 10% 40% 30%;
 }
 
 .select-body {
@@ -85,6 +88,6 @@ a {
 
 .input-box {
   /* min-width: 300px; */
-  width: 600px;
+  /* width: 600px; */
   height: 3.2em;
 }
