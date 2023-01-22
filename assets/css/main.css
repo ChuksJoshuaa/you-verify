@@ -228,3 +228,15 @@ a {
 .hide-show-icon {
   display: none;
 }
+
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.task-head {
+  display: flex;
+  justify-content: space-between;
+  
+}

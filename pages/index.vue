@@ -9,8 +9,8 @@ const title = ref('You-Verify')
       <Meta name="description" :content="title" />
       <Style type="text/css" children="body { background-color: #fff; }" />
     </Head>
-    <div class="absolute mt-[4em] border-t-1 border-gray-100 w-full">
-        <div class="flex  px-2">
+    <div class="absolute mt-[2.7rem] border-t-1 border-gray-100 w-full">
+        <div class="main-container">
           <Task />
           <Map />
           <Agents />
@@ -27,6 +27,18 @@ import Map from "../components/Map.vue"
 
 
 export default {
-  components: {Task, Agents, Map}
+  components: { Task, Agents, Map },
+
+  data() {
+    return {
+      hideTask: false
+    }
+  },
+
+  methods: {
+    hideButton() {
+      this.hideTask = true
+    }
+  }
 }
 </script>
