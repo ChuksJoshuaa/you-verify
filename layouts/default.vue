@@ -6,9 +6,17 @@
         <div v-else className="w-0">
             <Sidebar />
         </div>    
-        <div class="bg-main-bg min-h-screen w-full" :class="isSidebarOpen ? 'md:ml-72' : 'flex-2'">
+        <div class="bg-main-bg min-h-screen w-full" :class="isSidebarOpen ? 'ml-72' : 'flex-2'">
             <div>
                 <AppHeader />
+                <div>
+                    <div v-if="isSidebarOpen" @click="isSidebarOpen = false" class="close-button">
+                        <Icon name="fa6-solid:arrow-left" class="p-2 text-3xl rounded-full bg-main-bg shadow-lg cursor-pointer hover:bg-light-gray hover:text-[#fff]"></Icon>
+                    </div>
+                    <div v-else @click="isSidebarOpen = true" class="p-2">
+                        <Icon name="fa6-solid:arrow-right" class="p-2 text-3xl rounded-full bg-main-bg shadow-lg cursor-pointer hover:bg-light-gray hover:text-[#fff]"></Icon>
+                    </div>
+                </div>
             </div>
             <div>
                 <slot></slot>

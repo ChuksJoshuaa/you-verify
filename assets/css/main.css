@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Amiri:ital@1&family=Lobster+Two&family=Cormorant+Garamond:wght@300&family=Open+Sans:wght@400;500;600;700&family=Racing+Sans+One&family=Rajdhani:wght@500&family=Roboto+Mono:wght@100&display=swap");
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 html,
 body {
@@ -65,4 +65,10 @@ a {
   color: #fff;
   opacity: 1;
   font-weight: bolder;
+}
+
+
+.close-button {
+  position: relative;
+  right: 1em;
 }
