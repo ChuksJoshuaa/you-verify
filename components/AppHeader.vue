@@ -17,8 +17,10 @@ export default {
           <Icon @click="log" name="bi:search" class="cursor-pointer font-bolder text-gray-600 text-lg md:text-xl"></Icon>
         </button>
       </div>
-      <div>
-
+      <div class="flex ">
+         <Icon name="bi:bell"></Icon>
+        <img src="https://res.cloudinary.com/chuksmbanaso/image/upload/v1647635322/media/pic2_c0wzar.jpg" alt="profile-icon"
+          class="h-[52px] w-[52px]" />
       </div>
     </div>
     
