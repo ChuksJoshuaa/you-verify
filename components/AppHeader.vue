@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <div class="ml-[3em] h-[5rem] relative w-full bg-light-gray px-2">
+  <div class="ml-[3em] h-[5rem] relative w-full px-2 border-b-2 border-gray-200">
     <div class="py-2 select-top z-10">
       <select name="select" v-model="selectedValue" class="hide-search z-5 select-body outline-none border border-gray-100 text-md capitalize py-1 rounded cursor-pointer bg-gray-100 text-gray-900">
         <option value="" disabled selected>Select</option>
