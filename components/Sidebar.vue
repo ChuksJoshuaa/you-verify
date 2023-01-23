@@ -1,7 +1,7 @@
 
 
 <template>
-    <div>
+    <div class="sidebar-container">
         <div class="border-b-2 border-gray-200 h-[5rem] flex items-center bg-white">
             <img src="https://res.cloudinary.com/chuksmbanaso/image/upload/v1674124276/media/logo_iffgzd.svg" alt="youverify logo" class="image-box m-auto mt-[-1.5em] ml-[1.6em] cursor-pointer" />    
         </div>
