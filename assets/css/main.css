@@ -45,6 +45,7 @@ a {
   width: 130px;
 }
 
+
 .text-family {
  font-family: "Rajdhani", sans-serif;
 }
@@ -75,11 +76,25 @@ a {
 
 .select-top {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   display: grid;
-  grid-template-columns: 10% 1fr 1fr;
- 
+  grid-template-columns: 10% 60% 20%;
 }
+
+.profile-check {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-right: 2em;
+}
+
+@media screen and (max-width: 2070px){
+  .profile-check {
+    justify-content: space-evenly;
+  }
+
+}
+
 
 .select-body {
   min-width: 120px;
@@ -88,7 +103,76 @@ a {
 }
 
 .input-box {
-  /* min-width: 300px; */
-  /* width: 600px; */
   height: 3.9em;
+}
+
+@media screen and (max-width: 1774px){
+  .select-top {
+    grid-template-columns: 10% 50% 35%;
+  }
+}
+
+@media screen and (max-width: 1214px){
+  .select-top {
+    grid-template-columns: 10% 40% 40%;
+  }
+}
+
+@media screen and (max-width: 1018px){
+  .select-top {
+    grid-template-columns: 10% 45% 40%;
+  }
+}
+
+
+@media screen and (max-width: 828px){
+  .select-top {
+    grid-template-columns: 10% 40% 40%;
+  }
+}
+
+
+.hide-icon {
+  display: block;
+}
+
+.show-icon {
+  display: none
+}
+
+
+@media screen and (max-width: 1030px){
+  .hide-icon {
+    display: none;
+  }
+
+  .show-icon {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 690px){
+  .hide-search {
+    display: none;
+  }
+
+  .select-top {
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .profile-check {
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 405px){
+  .profile-check {
+    justify-content: flex-start;
+  }
+}
+
+.hide-show-icon {
+  display: none;
 }
