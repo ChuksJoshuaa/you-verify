@@ -7,7 +7,7 @@
             <Sidebar />
         </div>    
         <div v-if="isMedianSidebarOpen" className="fixed w-72 top-0 z-[9999]">
-            <Sidebar />
+            <Sidebar @close-sidebar-modal="isMedianSidebarOpen = false"/>
         </div>    
         <div class="bg-main-bg min-h-screen w-full" :class="isSidebarOpen ? 'ml-72': (isMedianSidebarOpen && isSidebarOpen) ? '' : 'flex-2'">
             <div>
