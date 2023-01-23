@@ -78,6 +78,10 @@ a {
   margin-left: 18rem;
 }
 
+.hide-median-icon{
+  display: none;
+}
+
 .select-top {
   position: absolute;
   width: 100%;
@@ -161,6 +165,10 @@ a {
 
   .left-close {
     display: none;
+  }
+
+  .hide-median-icon{
+    display: block;
   }
 }
 
