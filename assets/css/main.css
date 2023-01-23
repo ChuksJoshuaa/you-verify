@@ -74,6 +74,10 @@ a {
   right: 1em;
 }
 
+.app-close {
+  margin-left: 18rem;
+}
+
 .select-top {
   position: absolute;
   width: 100%;
@@ -148,6 +152,15 @@ a {
 
   .show-icon {
     display: block;
+  }
+
+  .app-close {
+    margin-left: 0;
+    z-index: 99;
+  }
+
+  .left-close {
+    display: none;
   }
 }
 
