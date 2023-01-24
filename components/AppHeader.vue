@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <div class="ml-[3em] h-[5rem] relative w-full px-2 border-b-2 border-gray-200">
+  <div class="ml-[3em] h-[5rem] app-container relative w-full px-0 md:px-2 border-b-1 border-gray-100">
     <div class="py-2 select-top z-10">
       <select name="select" v-model="selectedValue" class="hide-search z-5 select-body outline-none border border-gray-100 text-md capitalize py-1 rounded cursor-pointer bg-gray-100 text-gray-900">
         <option value="" disabled selected>Select</option>
@@ -27,7 +27,7 @@ export default {
           class="h-[52px] md:h-[62px] w-[52px] md:w-[62px] rounded-full image-left mr-3" />
 
          <div class="flex">
-          <h3 class=" text-center font-bold text-gray-900 text-md md:text-xl mr-0 md:mr-4">Solomon</h3>
+          <h3 class=" text-center font-bold text-gray-900 text-md md:text-xl mr-0 md:mr-4 solomon">Solomon</h3>
           <Icon name="fa6-solid:angle-down" class=" text-lg md:text-2xl font-bold ml-3"></Icon>
          </div>
       </div>

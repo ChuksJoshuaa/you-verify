@@ -9,7 +9,7 @@ const title = ref('You-Verify')
       <Meta name="description" :content="title" />
       <Style type="text/css" children="body { background-color: #fff; }" />
     </Head>
-    <div class="absolute mt-[4em] border-t-2 border-gray-300 w-full">
+    <div class="absolute mt-[4em] border-t-1 border-gray-100 w-full">
         <div class="flex  px-2">
           <Task />
           <Map />
