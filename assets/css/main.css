@@ -74,6 +74,14 @@ a {
   right: 1em;
 }
 
+.app-close {
+  margin-left: 18rem;
+}
+
+.hide-median-icon{
+  display: none;
+}
+
 .select-top {
   position: absolute;
   width: 100%;
@@ -147,6 +155,19 @@ a {
   }
 
   .show-icon {
+    display: block;
+  }
+
+  .app-close {
+    margin-left: 0;
+    z-index: 99;
+  }
+
+  .left-close {
+    display: none;
+  }
+
+  .hide-median-icon{
     display: block;
   }
 }
