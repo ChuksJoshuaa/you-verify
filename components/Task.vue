@@ -7,7 +7,14 @@
     </div>
     <div class="h-[3rem] px-4 py-2 w-full border-b-1 border-gray-100 task-head">
       <div v-for="item in userStatus.slice(0, 3)" :key="item.id">
-          <button class="text-md md:text-xl capitalize cursor-pointer" :value="item.status" @click="handle" :class="changeStatus === item.status ? 'font-bold text-[#22A6B5] pb-3 border-b-2 border-[#22A6B5]':''">{{ item.status }}</button>
+         <div class="flex" :class="changeStatus === item.status ? 'font-bold text-[#22A6B5] pb-3 border-b-2 border-[#22A6B5]':''">
+          <div v-for="i in checkLength" :key="i">
+            <p>{{getSlice(removeOne(item.status, checkLength), 1)}}</p>
+          </div>
+          <button class="text-md md:text-xl capitalize ml-1 cursor-pointer" :value="item.status" @click="handle"
+            >{{ item.status
+            }}</button>
+         </div> 
       </div>
     </div>
     <div class="h-full w-full">
@@ -37,33 +44,36 @@
 
 <script>
 import { userData } from '~~/utils/userData';
-import { findData, dataLength } from '~~/utils/raw';
+import { findData, findLength, removeDigit, sliceNumber } from '~~/utils/raw';
+
+
 export default {
   data() {
     return {
       userStatus: [],
       users: [],
       changeStatus: "",
-      dataLengthy: "",
+      checkLength: [],
+      removeOne: "",
+      getSlice: sliceNumber
     }
   },
   
-
   created() {
     this.userStatus = userData
     this.changeStatus = "Unassigned"
     this.users = findData(this.userStatus, this.changeStatus)
-    this.dataLengthy = dataLength(this.users)
+    this.checkLength = findLength(this.userStatus)
+    this.removeOne = removeDigit
   },
 
   methods: {
     handle(e) {
       this.changeStatus = e.target.value
       this.users = findData(this.userStatus, this.changeStatus)
-      this.dataLengthy = dataLength(this.users)
     }
-  }
- }
+  },
+}
 </script>
 
 <style>
