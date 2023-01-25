@@ -244,5 +244,17 @@ a {
 
 .agent-container {
   display: grid;
-  grid-template-columns: 10% 80% 10%;
+  grid-template-columns: 20% 70% 10%;
+}
+
+.new-container {
+  display: grid;
+  grid-template-columns: 20% 70% 10%;
+}
+.green-icon {
+  color: green;
+}
+
+.red-icon {
+  color: red;
 }

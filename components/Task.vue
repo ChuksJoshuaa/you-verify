@@ -17,7 +17,7 @@
             <Icon name="fa6-solid:plus" class="text-3xl md:text-4xl rounded-full p-2 bg-blue-gray text-white cursor-pointer"></Icon>
             <h2 class="opacity-50 text-gray-900 capitalize">Assign <br />Agent</h2>
           </div>
-          <div class="flex flex-col items-center">
+          <div class="flex flex-col items-start ml-5">
             <p class="font-medium text-md md:text-lg text-start capitalize">{{item.name}}</p>
             <p class="text-gray-400 text-start">{{item.address.slice(0, 27)}}...</p>
             <div class="flex justify-between">
@@ -37,14 +37,14 @@
 
 <script>
 import { userData } from '~~/utils/userData';
-import { findData } from '~~/utils/raw';
+import { findData, dataLength } from '~~/utils/raw';
 export default {
   data() {
     return {
       userStatus: [],
       users: [],
       changeStatus: "",
-      dataLength: ""
+      dataLengthy: "",
     }
   },
   
@@ -53,14 +53,14 @@ export default {
     this.userStatus = userData
     this.changeStatus = "Unassigned"
     this.users = findData(this.userStatus, this.changeStatus)
-    this.dataLength = findData.length
+    this.dataLengthy = dataLength(this.users)
   },
 
   methods: {
     handle(e) {
       this.changeStatus = e.target.value
       this.users = findData(this.userStatus, this.changeStatus)
-      this.dataLength = findData.length
+      this.dataLengthy = dataLength(this.users)
     }
   }
  }
