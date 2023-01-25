@@ -22,9 +22,9 @@
             <p class="text-gray-400 text-start">{{item.address.slice(0, 27)}}...</p>
             <div class="flex justify-between">
               <Users class="mt-1 text-[#22A6B5] opacity-50"/>
-              <h2 class="px-4 text-gray-400 ">{{ item.bank}}</h2>
-              
+              <h2 class="px-2 text-gray-400 ">{{ item.bank}}</h2>
             </div>
+            <p class="mt-3 text-[blue] font-small text-md md:text-lg opacity-100">{{item.createdAt}}</p>
           </div>
           <div class="mt-5">
             <Icon name="fa6-solid:angle-right" class="font-bold cursor-pointer text-gray-900 text-lg md:text-2xl"></Icon>

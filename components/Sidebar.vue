@@ -1,7 +1,7 @@
 
 
 <template>
-    <div class="sidebar-container">
+    <div class="sidebar-container overflow-y-auto">
         <div class="border-b-1 border-gray-100 h-[5rem] flex items-center bg-white" @click="$emit('close-sidebar-modal')">
             <img src="https://res.cloudinary.com/chuksmbanaso/image/upload/v1674124276/media/logo_iffgzd.svg" alt="youverify logo" class="image-box m-auto mt-[-1.5em] ml-[1.6em] cursor-pointer" />
                 <div class="hide-median-icon">
