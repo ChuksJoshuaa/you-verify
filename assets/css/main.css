@@ -188,9 +188,40 @@ a {
   }
 }
 
-@media screen and (max-width: 405px){
+@media screen and (max-width: 348px){
   .profile-check {
     justify-content: flex-start;
+  }
+
+  .solomon {
+    margin-right: 2em;
+  }
+}
+
+@media screen and (max-width: 315px){
+  .solomon {
+    margin-right: 1em;
+  }
+}
+
+
+
+@media screen and (max-width: 297px){
+  .solomon {
+    margin-right: 0em;
+  }
+
+  .image-left {
+    height: 42px;
+    width: 42px;
+  }
+
+  .show-icon {
+    margin-top: -3.4em
+  }
+
+  .app-container {
+    height: 4rem;
   }
 }
 
