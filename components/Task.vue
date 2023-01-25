@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white h-screen w-full">
+  <div class="bg-white h-screen w-full overflow-auto">
     <div class="h-[3rem] bg-blue-gray w-full border-b-1 border-gray-100">
       <h2 class="py-2 px-4 text-gray-50 font-bold text-md md:text-xl">
         Tasks
@@ -13,19 +13,22 @@
     <div class="h-full w-full">
       <div v-for="item in users" :key="item.id" class="p-4 border-b-1 border-gray-100">
         <div class="agent-container">
-          <div class="flex flex-col items-center">
-            <Icon name="fa6-solid:plus"></Icon>
-            <h2>Assign <br />Agent</h2>
+          <div class="flex flex-col items-center mt-1">
+            <Icon name="fa6-solid:plus" class="text-3xl md:text-4xl rounded-full p-2 bg-blue-gray text-white cursor-pointer"></Icon>
+            <h2 class="opacity-50 text-gray-900">Assign <br />Agent</h2>
           </div>
           <div class="flex flex-col items-center">
-            <p>{{item.name}}</p>
-            <p>{{item.address.slice(0, 23)}}...</p>
-            <div class="flex ">
-              <Users />
-              <h2>{{ item.bank}}</h2>
+            <p class="font-medium text-md md:text-lg text-start">{{item.name}}</p>
+            <p class="text-gray-400 text-start">{{item.address.slice(0, 27)}}...</p>
+            <div class="flex justify-between">
+              <Users class="mt-1 text-[#22A6B5] opacity-50"/>
+              <h2 class="px-4 text-gray-400 ">{{ item.bank}}</h2>
+              
             </div>
           </div>
-          <div></div>
+          <div class="mt-5">
+            <Icon name="fa6-solid:angle-right" class="font-bold cursor-pointer text-gray-900 text-lg md:text-2xl"></Icon>
+          </div>
         </div>
       </div>
     </div>
@@ -34,6 +37,7 @@
 
 <script>
 import { userData } from '~~/utils/userData';
+import { findData } from '~~/utils/raw';
 export default {
   data() {
     return {
@@ -48,16 +52,14 @@ export default {
   created() {
     this.userStatus = userData
     this.changeStatus = "Unassigned"
-    const findData = this.userStatus.filter((item) => item.status === this.changeStatus)
-    this.users = findData
+    this.users = findData(this.userStatus, this.changeStatus)
     this.dataLength = findData.length
   },
 
   methods: {
     handle(e) {
       this.changeStatus = e.target.value
-      const findData = this.userStatus.filter((item) => item.status  === this.changeStatus)
-      this.users = findData
+      this.users = findData(this.userStatus, this.changeStatus)
       this.dataLength = findData.length
     }
   }
