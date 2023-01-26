@@ -11,9 +11,9 @@ const title = ref('You-Verify')
     </Head>
     <div class="absolute mt-[2.7rem] border-t-1 border-gray-100 w-full">
         <div class="main-container">
-          <Task />
-          <Map />
-          <Agents />
+          <Task v-if="hideTask"/>
+          <Map @close-task-modal="hideTask = false" @open-task-modal="hideTask = true" @close-agent-modal="hideAgent = false" @open-agent-modal="hideAgent = true"/>
+          <Agents v-if="hideAgent"/>
         </div>
     </div>
   </div>
@@ -31,14 +31,13 @@ export default {
 
   data() {
     return {
-      hideTask: false
+      hideTask: true,
+      hideAgent: true,
     }
   },
 
   methods: {
-    hideButton() {
-      this.hideTask = true
-    }
+    
   }
 }
 </script>

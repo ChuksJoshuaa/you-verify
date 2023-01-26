@@ -15,6 +15,7 @@
     "tailwindcss": "^3.2.4"
   },
   "dependencies": {
+    "ol": "^7.2.2",
     "unplugin-icons": "^0.15.1",
     "unplugin-icons-nuxt3": "^1.0.0"
   }
