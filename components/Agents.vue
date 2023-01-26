@@ -10,10 +10,10 @@
   </div>
   <div class="h-[3rem] px-4 py-2 w-full border-b-1 border-gray-100 task-head">
     <div v-for="item in agentTitle" :key="item.id">
-      <div>
-        <Icon name="fa6-solid:circle" class="text-sm" :class="item.status === 'All' ? 'opacity-0' : item.status === 'Online' ? 'font-bold green-icon' : 'font-bold red-icon'"></Icon>
-        <button class="text-md md:text-xl capitalize cursor-pointer ml-2" :value="item.status" @click="handle"
-          :class="changeStatus === item.status ? 'font-bold text-[#22A6B5] pb-3 border-b-2 border-[#22A6B5]' : ''">{{
+      <div :class="changeStatus === item.status ? 'font-bold text-[#22A6B5] pb-3 border-b-2 border-[#22A6B5]' : ''">
+        <Icon name="fa6-solid:circle" class="text-sm mr-2" :class="item.status === 'All' ? 'opacity-0' : item.status === 'Online' ? 'font-bold green-icon' : 'font-bold red-icon'"></Icon>
+        <button class="text-md md:text-xl capitalize cursor-pointer" :value="item.status" @click="handle"
+          :class="item.status === 'All'? 'mr-4':''">{{
           item.status
           }}</button>
       </div>

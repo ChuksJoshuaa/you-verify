@@ -8,11 +8,8 @@
     <div class="h-[3rem] px-4 py-2 w-full border-b-1 border-gray-100 task-head">
       <div v-for="item in userStatus.slice(0, 3)" :key="item.id">
          <div class="flex" :class="changeStatus === item.status ? 'font-bold text-[#22A6B5] pb-3 border-b-2 border-[#22A6B5]':''">
-          <div v-for="i in checkLength" :key="i">
-            <p>{{getSlice(removeOne(item.status, checkLength), 1)}}</p>
-          </div>
           <button class="text-md md:text-xl capitalize ml-1 cursor-pointer" :value="item.status" @click="handle"
-            >{{ item.status
+            >{{removeOne(item.status, checkLength)}} {{ item.status
             }}</button>
          </div> 
       </div>

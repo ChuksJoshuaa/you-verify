@@ -40,7 +40,11 @@ export const removeDigit = (digit, index) => {
     num = index[2];
   }
 
-  console.log(num);
-
   return num;
 };
+
+// {
+//   {
+//     getSlice(removeOne(item.status, checkLength), 2);
+//   }
+// }
