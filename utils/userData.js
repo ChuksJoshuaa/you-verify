@@ -187,6 +187,14 @@ export const userData = [
   },
   {
     id: generateUniqueId(),
+    name: "Abiodun Olawale Solomon",
+    address: "12b Emmanuel High Street Along Surface Road",
+    bank: "Sterling Bank PLC",
+    createdAt: "A Day Ago",
+    status: "Unassigned",
+  },
+  {
+    id: generateUniqueId(),
     name: "John Obinna",
     address: "1c Timothy road, off isolo way",
     bank: "Eco Bank PLC",
