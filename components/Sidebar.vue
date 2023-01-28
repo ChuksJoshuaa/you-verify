@@ -1,9 +1,15 @@
 
 
 <template>
-    <div>
-        <div class="border-b-2 border-gray-200 h-[5rem] flex items-center bg-white">
-            <img src="https://res.cloudinary.com/chuksmbanaso/image/upload/v1674124276/media/logo_iffgzd.svg" alt="youverify logo" class="image-box m-auto mt-[-1.5em] ml-[1.6em] cursor-pointer" />    
+    <div class="sidebar-container overflow-y-auto">
+        <div class="border-b-1 border-gray-100 h-[5rem] flex items-center bg-white" @click="$emit('close-sidebar-modal')">
+            <img src="https://res.cloudinary.com/chuksmbanaso/image/upload/v1674124276/media/logo_iffgzd.svg" alt="youverify logo" class="image-box m-auto mt-[-1.5em] ml-[1.6em] cursor-pointer" />
+                <div class="hide-median-icon">
+                    <Icon  name="fa6-solid:arrow-left"
+                        @click="$emit('close-sidebar-modal')"
+                        class="p-2 text-4xl rounded-full bg-main-bg shadow-lg cursor-pointer hover:bg-light-gray hover:text-[#fff]">
+                    </Icon>
+                </div>     
         </div>
         <div class="h-[6.4em] bg-dark-blue">
             <div class="py-3 px-6">
