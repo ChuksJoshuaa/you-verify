@@ -17,7 +17,7 @@
     <div class="h-full w-full">
       <div v-for="item in users" :key="item.id" class="p-4 border-b-1 border-gray-100">
         <div class="agent-container">
-          <div class="flex flex-col items-center mt-1">
+          <div class="flex flex-col items-start mt-1 ml-3">
             <Icon name="fa6-solid:plus" class="text-3xl md:text-4xl rounded-full p-2 bg-blue-gray text-white cursor-pointer"></Icon>
             <h2 class="opacity-50 text-gray-900 capitalize">Assign <br />Agent</h2>
           </div>
