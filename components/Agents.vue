@@ -1,5 +1,5 @@
 <template>
-<div class="bg-white h-screen w-full overflow-auto">
+<div class="relative bg-white h-screen w-full overflow-auto">
   <div class="h-[3rem] bg-blue-gray w-full border-b-1 border-gray-100">
     <div class="flex justify-between py-2 px-4">
       <h2 class=" text-gray-50 font-bold text-md md:text-xl">
@@ -45,6 +45,8 @@ import { agentTitleData, agentData } from '~~/utils/agentData';
 
 
 export default {
+  name: "Agents",
+  
   data() {
     return {
       agentTitle: [],

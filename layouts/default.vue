@@ -27,21 +27,34 @@
                 </div>
             </div>
             <div>
-                <slot></slot>
+                <!-- <slot :newValue="screenSize"></slot> -->
+                <Child  :check="isSidebarOpen" />
             </div>
         </div>
     </div>
 </template>
 
+<script>
+import Child from "@/pages/index.vue"
 
-<script setup>
-const isSidebarOpen = useState('isSidebarOpen', () => true)
+export default {
+    components: { Child },
+    name: "Layout",
+    data() {
+        return {
+            isSidebarOpen: true,
+            isMedianSidebarOpen: false,
+            screenSize: null,
+        }
+    },
 
-const isMedianSidebarOpen = useState('isMedianSidebarOpen', () => false)
-const screenSize = useState('screenSize', () => 1030)
+    created() {
+        if (typeof window !== 'undefined') {
+            const yes = window?.innerWidth
 
-function left() {
-    console.log("left closed")
+            this.screenSize = yes
+        }
+
+    },
 }
-
 </script>

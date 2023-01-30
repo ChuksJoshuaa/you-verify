@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white h-screen w-full overflow-auto">
+  <div class="relative bg-white h-screen w-full overflow-auto">
     <div class="h-[3rem] bg-blue-gray w-full border-b-1 border-gray-100">
       <h2 class="py-2 px-4 text-gray-50 font-bold text-md md:text-xl">
         Tasks
@@ -45,6 +45,8 @@ import { findData, findLength, removeDigit, sliceNumber } from '~~/utils/raw';
 
 
 export default {
+  name: "Task",
+  
   data() {
     return {
       userStatus: [],
