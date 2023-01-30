@@ -346,15 +346,29 @@ a {
   }
 }
 
-/* @media screen and (max-width: 600px){
-  .task-closing{
-    width: 100%;
+@media screen and (max-width: 600px){
+  .task-close-bar{
+    display: none;
   }
 
-  .agent-closing {
+  .task-closing{
+    position: absolute;
+    top: 0;
     width: 100%;
+    right: 0;
   }
-} */
+
+  .agent-close-bar {
+    display: none;
+  }
+
+  .agent-closing{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    right: 0;
+  }
+}
 
 
 /* At 1550px if sidebar is open */
