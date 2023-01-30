@@ -21,12 +21,30 @@ export const agentData = [
   },
   {
     id: generateUniqueId(),
+    name: "Nnenna Joshua Amaka",
+    phone: "08143567812",
+    location: "Enugu",
+    image:
+      "https://res.cloudinary.com/chuksmbanaso/image/upload/v1647627718/media/photo4_g79t9j.jpg",
+    status: "Online",
+  },
+  {
+    id: generateUniqueId(),
     name: "Caleb Timothy Levi",
     phone: "08123567812",
     location: "Ore",
     image:
       "https://res.cloudinary.com/chuksmbanaso/image/upload/v1647635346/media/pic3_yk82rn.jpg",
     status: "Online",
+  },
+  {
+    id: generateUniqueId(),
+    name: "Bola Wale Simi",
+    phone: "09023567812",
+    location: "Sango",
+    image:
+      "https://res.cloudinary.com/chuksmbanaso/image/upload/v1647635394/media/happy0_da1itr.jpg",
+    status: "Offline",
   },
   {
     id: generateUniqueId(),
