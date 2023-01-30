@@ -44,17 +44,7 @@ export default {
         return {
             isSidebarOpen: true,
             isMedianSidebarOpen: false,
-            screenSize: null,
         }
-    },
-
-    created() {
-        if (typeof window !== 'undefined') {
-            const yes = window?.innerWidth
-
-            this.screenSize = yes
-        }
-
     },
 }
 </script>

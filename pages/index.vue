@@ -12,7 +12,7 @@ const title = ref('You-Verify')
     <div class="absolute mt-[2.7rem] border-t-1 border-gray-100 w-full">
       <div class="relative bg-slate-600 h-screen" :class="latest === true ? 'width-container mr-0':'full-container mr-0'">
           <Map @open-task-modal="showTask = true" @open-agent-modal="showAgent = true" />
-          <div class="absolute w-[35%] h-screen top-0 left-0 flex">
+          <div class="absolute h-screen top-0 left-0 flex task-closing" :class="showTask ? 'task-z':'task-y'">
             <div :class="showTask === false ? 'block':'hidden'">
               <Icon name="fa6-solid:angle-right" @click="showTaskNow"
                 class="text-5xl rounded p-4 bg-dark-bg text-gray-50 font-bold cursor-pointer mr-[-0.2rem]"></Icon>
@@ -20,11 +20,11 @@ const title = ref('You-Verify')
             <Task v-if="showTask"  class="z-50" />
             <div :class="showTask === false ? 'hidden':'block'">
               <Icon name="fa6-solid:angle-left"
-                class="text-5xl rounded p-4 bg-dark-bg text-gray-50 font-bold cursor-pointer"
+                class="text-5xl rounded p-4 bg-dark-bg text-gray-50 font-bold cursor-pointer z-[9999]"
                 @click="closeTask"></Icon> 
             </div>
           </div>
-          <div class="absolute w-[35%] h-screen top-0 right-0 flex " :class="showAgent === false ? 'flex-row-reverse':''">
+          <div class="absolute  h-screen top-0 right-0 flex agent-closing" :class="showAgent === false ? 'flex-row-reverse agent-y':'agent-z'">
             <div :class="showAgent === false ? 'hidden':'block'">
               <Icon name="fa6-solid:angle-right"
                 class="text-5xl rounded p-4 bg-dark-bg text-gray-50 font-bold cursor-pointer"
@@ -56,12 +56,16 @@ export default {
     return {
       showTask: true,
       showAgent: true,
+      screenSize: null,
     }
   },
 
   watch: {
     check: function () {
       console.log(this.check)
+    },
+    screenSize: function () {
+      console.log(this.screenSize)
     }
   },
 
@@ -73,6 +77,19 @@ export default {
 
   created: function () {
     console.log(this.latest)
+
+    if (typeof window !== 'undefined') {
+      const yes = window?.innerWidth
+
+      this.screenSize = yes
+    }
+  },
+
+  mounted() {
+    if (this.screenSize <= 1550) {
+      this.showTask = false
+      this.showAgent = false
+     } 
   },
 
   methods: {
@@ -85,11 +102,25 @@ export default {
     },
 
     showTaskNow() {
-      this.showTask = true
+      if (this.screenSize <= 1550) {
+        this.showTask = true;
+        this.showAgent = false
+      }
+
+      else {
+        this.showTask = true
+      }
     },
 
     showAgentNow() {
-      this.showAgent = true
+      if (this.screenSize <= 1550) {
+        this.showAgent = true;
+        this.showTask = false
+      }
+
+      else {
+        this.showAgent = true
+      }
     }
   },
 

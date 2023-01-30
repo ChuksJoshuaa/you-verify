@@ -303,5 +303,43 @@ a {
   margin-right: -10em;
 }
 
+.task-closing {
+  width: 35%;
+}
+
+
+@media screen and (max-width: 1550px) {
+  .task-closing {
+    width: 65%;
+  }
+
+  .task-z {
+    z-index: 9999;
+  }
+
+  .agent-y {
+    z-index: 100;
+  }
+}
+
+.agent-closing {
+  width: 35%;
+}
+
+
+@media screen and (max-width: 1550px) {
+  .agent-closing {
+    width: 65%;
+  }
+  .task-y {
+    z-index: 100;
+  }
+
+  .agent-z {
+    z-index: 9999;
+  }
+}
+
+
 
 /* At 1550px if sidebar is open */
