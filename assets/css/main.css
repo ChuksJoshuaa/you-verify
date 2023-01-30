@@ -307,10 +307,13 @@ a {
   width: 35%;
 }
 
+.agent-closing {
+  width: 35%;
+}
 
 @media screen and (max-width: 1550px) {
   .task-closing {
-    width: 65%;
+    width: 90%;
   }
 
   .task-z {
@@ -320,16 +323,9 @@ a {
   .agent-y {
     z-index: 100;
   }
-}
 
-.agent-closing {
-  width: 35%;
-}
-
-
-@media screen and (max-width: 1550px) {
   .agent-closing {
-    width: 65%;
+    width: 90%;
   }
   .task-y {
     z-index: 100;
@@ -338,8 +334,27 @@ a {
   .agent-z {
     z-index: 9999;
   }
+
+  .task-icon-hide {
+    display: none;
+    visibility: hidden;
+  }
+
+  .agent-icon-hide {
+    display: none;
+    visibility: hidden;
+  }
 }
 
+/* @media screen and (max-width: 600px){
+  .task-closing{
+    width: 100%;
+  }
+
+  .agent-closing {
+    width: 100%;
+  }
+} */
 
 
 /* At 1550px if sidebar is open */

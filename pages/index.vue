@@ -15,7 +15,7 @@ const title = ref('You-Verify')
           <div class="absolute h-screen top-0 left-0 flex task-closing" :class="showTask ? 'task-z':'task-y'">
             <div :class="showTask === false ? 'block':'hidden'">
               <Icon name="fa6-solid:angle-right" @click="showTaskNow"
-                class="text-5xl rounded p-4 bg-dark-bg text-gray-50 font-bold cursor-pointer mr-[-0.2rem]"></Icon>
+                class="text-5xl rounded p-4 bg-dark-bg text-gray-50 font-bold cursor-pointer mr-[-0.2rem]" :class="showAgent === true ? 'task-icon-hide':''"></Icon>
             </div>
             <Task v-if="showTask"  class="z-50" />
             <div :class="showTask === false ? 'hidden':'block'">
@@ -33,7 +33,7 @@ const title = ref('You-Verify')
             <Agents v-if="showAgent" />
             <div :class="showAgent === false ? 'block':'hidden'">
               <Icon name="fa6-solid:angle-left" @click="showAgentNow"
-                class="text-5xl rounded p-4 bg-dark-bg text-gray-50 font-bold cursor-pointer ml-[-0.3rem]"></Icon>
+                class="text-5xl rounded p-4 bg-dark-bg text-gray-50 font-bold cursor-pointer ml-[-0.3rem]" :class="showTask === true ? 'agent-icon-hide':''"></Icon>
             </div>
           </div>
       </div>
