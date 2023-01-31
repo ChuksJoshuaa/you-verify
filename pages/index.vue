@@ -20,7 +20,7 @@ const title = ref('You-Verify')
             <Task v-if="showTask" />
             <div :class="showTask === false ? 'hidden':'block'">
               <Icon name="fa6-solid:angle-left"
-                class="text-3xl md:text-5xl rounded p-2 md:p-4 bg-dark-bg text-gray-50 font-bold cursor-pointer z-[9999]"
+                class="text-3xl md:text-5xl rounded p-2 md:p-4 bg-dark-bg text-gray-50 font-bold cursor-pointer"
                 :class="showAgent ? 'task-close-bar':''"
                 @click="closeTask"></Icon> 
             </div>
