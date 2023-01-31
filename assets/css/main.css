@@ -351,24 +351,15 @@ a {
     display: none;
   }
 
-  .task-closing{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    right: 0;
-  }
-
   .agent-close-bar {
     display: none;
   }
 
-  .agent-closing{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    right: 0;
+  .green-icon {
+    font-size: 0.6rem;
+  }
+
+   .red-icon {
+    font-size: 0.6rem;
   }
 }
-
-
-/* At 1550px if sidebar is open */

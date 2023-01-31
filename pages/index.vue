@@ -11,20 +11,20 @@ const title = ref('You-Verify')
     </Head>
     <div class="absolute mt-[2.7rem] border-t-1 border-gray-100 w-full">
       <div class="relative bg-slate-600 h-screen" :class="latest === true ? 'width-container mr-0':'full-container mr-0'">
-          <Map @open-task-modal="showTask = true" @open-agent-modal="showAgent = true" />
-          <div class="absolute h-screen top-0 left-0 flex task-closing z-50" :class="showTask ? 'task-z':'task-y'">
+          <Map />
+          <div class="absolute h-screen top-0 left-0 flex task-closing" :class="showTask ? 'task-z':'task-y'">
             <div :class="showTask === false ? 'block':'hidden'">
-              <Icon name="fa6-solid:angle-right" @click="showTaskNow"
-                class="text-5xl rounded p-4 bg-dark-bg text-gray-50 font-bold cursor-pointer mr-[-0.2rem]" :class="showAgent === true ? 'task-icon-hide':''"></Icon>
+              <Icon name="fa6-solid:angle-right" v-on:click="showTaskNow"
+                class="text-3xl md:text-5xl rounded  p-2 md:p-4 bg-dark-bg text-gray-50 font-bold cursor-pointer mr-[-0.2rem]" :class="showAgent === true ? 'task-icon-hide':''"></Icon>
             </div>
-            <Task v-if="showTask"  class="z-50" />
+            <Task v-if="showTask" />
             <div :class="showTask === false ? 'hidden':'block'" class="task-close-bar">
               <Icon name="fa6-solid:angle-left"
                 class="text-5xl rounded p-4 bg-dark-bg text-gray-50 font-bold cursor-pointer z-[9999]"
                 @click="closeTask"></Icon> 
             </div>
           </div>
-          <div class="absolute  h-screen top-0 right-0 flex agent-closing z-50" :class="showAgent === false ? 'flex-row-reverse agent-y':'agent-z'">
+          <div class="absolute  h-screen top-0 right-0 flex agent-closing" :class="showAgent === false ? 'flex-row-reverse agent-y':'agent-z'">
             <div :class="showAgent === false ? 'hidden':'block'" class="agent-close-bar">
               <Icon name="fa6-solid:angle-right"
                 class="text-5xl rounded p-4 bg-dark-bg text-gray-50 font-bold cursor-pointer"
@@ -33,7 +33,7 @@ const title = ref('You-Verify')
             <Agents v-if="showAgent" />
             <div :class="showAgent === false ? 'block':'hidden'">
               <Icon name="fa6-solid:angle-left" @click="showAgentNow"
-                class="text-5xl rounded p-4 bg-dark-bg text-gray-50 font-bold cursor-pointer ml-[-0.3rem]" :class="showTask === true ? 'agent-icon-hide':''"></Icon>
+                class="text-3xl md:text-5xl rounded p-2 md:p-4 bg-dark-bg text-gray-50 font-bold cursor-pointer ml-[-0.3rem]" :class="showTask === true ? 'agent-icon-hide':''"></Icon>
             </div>
           </div>
       </div>
@@ -76,8 +76,6 @@ export default {
   },
 
   created: function () {
-    console.log(this.latest)
-
     if (typeof window !== 'undefined') {
       const yes = window?.innerWidth
 

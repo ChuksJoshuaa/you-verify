@@ -1,6 +1,6 @@
 <template>
   
-  <div class="z-10">  
+  <div >  
     <h3></h3>
   </div>
 
