@@ -18,16 +18,18 @@ const title = ref('You-Verify')
                 class="text-3xl md:text-5xl rounded  p-2 md:p-4 bg-dark-bg text-gray-50 font-bold cursor-pointer mr-[-0.2rem]" :class="showAgent === true ? 'task-icon-hide':''"></Icon>
             </div>
             <Task v-if="showTask" />
-            <div :class="showTask === false ? 'hidden':'block'" class="task-close-bar">
+            <div :class="showTask === false ? 'hidden':'block'">
               <Icon name="fa6-solid:angle-left"
-                class="text-5xl rounded p-4 bg-dark-bg text-gray-50 font-bold cursor-pointer z-[9999]"
+                class="text-3xl md:text-5xl rounded p-2 md:p-4 bg-dark-bg text-gray-50 font-bold cursor-pointer z-[9999]"
+                :class="showAgent ? 'task-close-bar':''"
                 @click="closeTask"></Icon> 
             </div>
           </div>
           <div class="absolute  h-screen top-0 right-0 flex agent-closing" :class="showAgent === false ? 'flex-row-reverse agent-y':'agent-z'">
-            <div :class="showAgent === false ? 'hidden':'block'" class="agent-close-bar">
+            <div :class="showAgent === false ? 'hidden':'block'" >
               <Icon name="fa6-solid:angle-right"
-                class="text-5xl rounded p-4 bg-dark-bg text-gray-50 font-bold cursor-pointer"
+                class="text-3xl md:text-5xl rounded p-2 md:p-4 bg-dark-bg text-gray-50 font-bold cursor-pointer"
+                :class="showTask ? 'agent-close-bar':''"
                 @click="closeAgent"></Icon>
             </div>
             <Agents v-if="showAgent" />

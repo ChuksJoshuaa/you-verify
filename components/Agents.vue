@@ -8,7 +8,7 @@
       <Icon name="bi:search" class="mt-1 cursor-pointer font-bold text-gray-50 text-md md:text-2xl"></Icon>
     </div>
   </div>
-  <div class="h-[3rem] px-2 md:px-4 py-3 md:py-2 w-full border-b-1 border-gray-100 task-head">
+  <div class="h-[2.9rem] md:h-[3rem] px-2 md:px-4 py-2 w-full border-b-1 border-gray-100 task-head">
     <div v-for="item in agentTitle" :key="item.id">
       <div :class="changeStatus === item.status ? 'font-bold text-[#22A6B5] pb-3 border-b-2 border-[#22A6B5]' : ''">
         <Icon name="fa6-solid:circle" class="text-sm mr-1" :class="item.status === 'All' ? 'opacity-0' : item.status === 'Online' ? 'ffont-bold green-icon' : 'font-bold red-icon'"></Icon>

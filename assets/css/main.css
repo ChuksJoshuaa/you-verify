@@ -22,13 +22,8 @@ a {
   box-sizing: border-box;
 }
 
-.videos::-webkit-scrollbar {
-  width: 0px;
-  scroll-snap-points-y: repeat(3rem);
-}
-
 ::-webkit-scrollbar {
-  width: 4px;
+  width: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -336,12 +331,10 @@ a {
   }
 
   .task-icon-hide {
-    display: none;
     visibility: hidden;
   }
 
   .agent-icon-hide {
-    display: none;
     visibility: hidden;
   }
 }
@@ -361,5 +354,8 @@ a {
 
    .red-icon {
     font-size: 0.6rem;
+  }
+  .task-closing {
+    width: 96%;
   }
 }
