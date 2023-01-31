@@ -10,7 +10,7 @@ const title = ref('You-Verify')
       <Style type="text/css" children="body { background-color: #fff; }" />
     </Head>
     <div class="absolute mt-[2.7rem] border-t-1 border-gray-100 w-full">
-      <div class="relative bg-slate-600 h-screen" :class="latest === true ? 'width-container mr-0':'full-container mr-0'">
+      <div class="relative bg-slate-200 h-screen" :class="latest === true ? 'width-container mr-0':'full-container mr-0'">
           <Map />
           <div class="absolute h-screen top-0 left-0 flex task-closing" :class="showTask ? 'task-z':'task-y'">
             <div :class="showTask === false ? 'block':'hidden'">
