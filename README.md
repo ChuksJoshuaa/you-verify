@@ -1,6 +1,5 @@
-# Nuxt 3 Minimal Starter
-
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+# Modern UI Dashboard With Map
+<img src="https://res.cloudinary.com/chuksmbanaso/image/upload/v1675401314/Screenshot_2023-02-01_at_17.50.45_iqzllm.png" title="icon" alt="icon">
 
 ## Setup
 
@@ -39,4 +38,3 @@ Locally preview production build:
 npm run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
