@@ -359,3 +359,8 @@ a {
     width: 96%;
   }
 }
+
+.map-image {
+   height: 100vh;
+   width: 100%;
+}
