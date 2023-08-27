@@ -1,5 +1,5 @@
 # Modern UI Dashboard With Map
-<img src="https://res.cloudinary.com/chuksmbanaso/image/upload/v1675401314/Screenshot_2023-02-01_at_17.50.45_iqzllm.png" title="icon" alt="icon">..
+<img src="https://res.cloudinary.com/chuksmbanaso/image/upload/v1675401314/Screenshot_2023-02-01_at_17.50.45_iqzllm.png" title="icon" alt="icon">...
 
 ## Setup
 
